@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * These CSS custom properties back every semantic color token in
+ * tailwind.config.js (bg-surface, text-foreground, border-border, etc.).
+ * On native, NativeWind resolves var(--color-x) from definitions actually
+ * present in this file at build time — there is no DOM, so nothing can set
+ * these at runtime the way a web app would with document.style.setProperty.
+ * Values are pulled directly from theme.config.js (currently identical for
+ * light/dark on every token, so one :root block covers both).
+ */
+:root {
+  --color-primary: #FF6B35;
+  --color-background: #0F0F0F;
+  --color-surface: #1A1A1A;
+  --color-foreground: #FFFFFF;
+  --color-muted: #A0A0A0;
+  --color-border: #333333;
+  --color-success: #4CAF50;
+  --color-warning: #FFA500;
+  --color-error: #FF5252;
+}
